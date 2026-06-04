@@ -1752,7 +1752,7 @@ export default function App() {
                         if (loginError) setLoginError('');
                       }}
                       className="w-full bg-[#05070a] text-xs text-white placeholder-white/15 border border-slate-800 focus:border-[#38debb]/50 rounded px-3.5 py-3 pl-10 outline-none focus:ring-1 focus:ring-[#38debb]/25 font-mono tracking-wide"
-                      placeholder="Enter passkey (e.g. Vigilance2026)"
+                      placeholder="Enter passkey (e.g. Pass@phrase1238)"
                       id="login-passcode-input"
                     />
                   </div>
