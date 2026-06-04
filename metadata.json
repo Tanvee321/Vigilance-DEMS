@@ -1,0 +1,6 @@
+{
+  "name": "Vigilance DEMS",
+  "description": "Secure Digital Forensics & Immutable Evidence Repository featuring WebCrypto SHA-256 hashing and automated tamper-detection tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
