@@ -401,7 +401,8 @@ export async function readAllEvidence(): Promise<ForensicEntry[]> {
   const sqlite = await getSqlite();
 
   return new Promise<ForensicEntry[]>((resolve) => {
-    const fdb = new sqlite.Database(forensicsDbPath, (err: Error | null) => {
+    const dbConnectionPath = process.env.DATABASE_URL ? ':memory:' : forensicsDbPath;
+    const fdb = new sqlite3.Database(dbConnectionPath, (err: Error | null) => { 
       if (err) {
         console.error('[DB readAllEvidence Open Fail]', err);
         resolve([]);
